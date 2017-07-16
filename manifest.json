@@ -1,0 +1,27 @@
+{
+  "name": "Send to Kodi",
+  "description": "Adds a Send to Kodi Link when right clicking links",
+  "version": "0.2",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "storage"
+  ],
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "browser_action": {
+      "default_title": "Send to Kodi settings.",
+      "default_icon": "icon-48.png",
+      "default_popup": "popup.html"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["jquery-3.2.1.min.js", "youtube.js"]
+  },
+  "manifest_version": 2
+}
