@@ -1,12 +1,9 @@
 {
   "name": "Send to Kodi",
   "description": "Adds a Send to Kodi Link when right clicking links",
-  "version": "0.4",
+  "version": "0.5",
   "permissions": [
     "contextMenus",
-    "tabs",
-    "http://*/*",
-    "https://*/*",
     "storage"
   ],
   "icons": {
