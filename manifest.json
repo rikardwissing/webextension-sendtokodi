@@ -1,7 +1,7 @@
 {
   "name": "Send to Kodi",
   "description": "Adds a Send to Kodi Link when right clicking links",
-  "version": "0.2",
+  "version": "0.3",
   "permissions": [
     "contextMenus",
     "tabs",
@@ -21,7 +21,12 @@
   },
   "background": {
     "persistent": false,
-    "scripts": ["jquery-3.2.1.min.js", "youtube.js"]
+    "scripts": ["jquery-3.2.1.min.js", "background.js"]
   },
-  "manifest_version": 2
+  "manifest_version": 2,
+  "applications": {
+    "gecko": {
+      "id": "sendtokodi@rikardwissing"
+    }
+  }
 }

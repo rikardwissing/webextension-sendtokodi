@@ -128,7 +128,7 @@ function GetPluginURL(linkUrl)
 var savedOptions;
 
 function getSavedOptions(callback) {
-  chrome.storage.sync.get({
+  chrome.storage.local.get({
     hostname: 'kodi'
   }, function(items) {
     savedOptions = items;

@@ -5,7 +5,7 @@
 
 function saveOptions() {
   var hostname = document.getElementById('hostname').value;
-  chrome.storage.sync.set({
+  chrome.storage.local.set({
     hostname: hostname
   }, function() {
     chrome.contextMenus.update("hostname", {title: "Host: " + hostname});
@@ -13,7 +13,7 @@ function saveOptions() {
 }
 
 function restoreOptions() {
-  chrome.storage.sync.get({
+  chrome.storage.local.get({
     hostname: 'kodi'
   }, function(items) {
     document.getElementById('hostname').value = items.hostname;
