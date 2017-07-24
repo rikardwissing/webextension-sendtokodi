@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head><title>Send to Kodi</title></head>
+<link rel="stylesheet" type="text/css" href="popup.css">
 <body>
 
-<div style="margin-bottom: 5px;">Set Kodi Hostname:</div>
-<input type="text" id="hostname">
+<div >
+  <div class="hostinfo">
+    <div class="hostinfo__label">Host</div>
+    <div class="hostinfo__view">
+      <div id="default_view">
+        <span class="hostinfo__host" id="hostname_span"></span>
+        <span class="hostinfo__change">(<a href="#" id="hostname_change" tabindex="-1">change</a>)</span>
+      </div>
+      <div id="form_view">
+        <form>
+          <input type="text" id="hostname">
+          <input type="submit" id="hostname_button" value="Save">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="information">
+    <div class="hostinfo__label">Abilities</div>
+    <div>
+      <ul>
+        <li>Right click on a link or page to a video and select Send to Kodi</li>
+        <li>Control Kodi using your keyboard when this popup is active</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="jquery-3.2.1.min.js"></script>
 <script src="popup.js"></script>
 </body>
 </html>

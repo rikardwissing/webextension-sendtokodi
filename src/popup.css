@@ -1,0 +1,39 @@
+body {
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  width: 200px;
+}
+
+#default_view {
+  display: block;
+}
+
+#form_view {
+  display: none;
+}
+
+#hostname {
+  width:70%;
+}
+
+#hostname_button {
+  width: 25%;
+  float: right;
+}
+
+.hostinfo__label {
+  font-weight: bold;
+}
+
+.information {
+  margin-top: 10px;
+}
+
+.hostinfo__view {
+  margin: 4px 0;
+}
+
+ul {
+  margin: 4px 0;
+  padding-left: 20px;
+}
