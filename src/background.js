@@ -139,7 +139,15 @@ function getSavedOptions(callback) {
 function SubmitForm(reqval) {
   getSavedOptions(function() {
     var url = "http://" + savedOptions.hostname + "/jsonrpc";
-    $.get(url, {request: reqval});
+    $.ajax
+    ({
+      type: "POST",
+      url: url,
+      contentType: 'application/json',
+      dataType: 'json',
+      async: false,
+      data: reqval
+    })
   });
 }
 
